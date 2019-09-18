@@ -32,16 +32,14 @@ public class Main {
                 } else {
                     p[i][j] = Math.atan(1.0d / Math.pow(Math.E, Math.pow(3.0d / (Math.pow(Math.cos(Math.exp(Math.pow((localX + 2.0d), 2.0d))) ,2.0d) + 1) ,Math.cbrt(Math.pow(0.5d / (2.0d + localX), 2.0d) * (Math.pow(Math.E, localX) + 1.0d)))));
                 }
-                if(i == 5){
-                    System.out.println(String.valueOf(p[i][j]) + " y[i] == " + String.valueOf(y[i]) + " x[j] == " + String.valueOf(x[j]));
-                }
+                //System.out.println(String.valueOf(p[i][j]) + " y[i] == " + String.valueOf(y[i]) + " x[j] == " + String.valueOf(x[j]));
             }
         }
         // -------
 
         // Пункт 4
         for(int i = 0; i < 13; i++){
-            System.out.print(String.valueOf(i) + ' ');
+            //System.out.print(String.valueOf(i) + ' ');
             for(int j = 0; j < 12; j++){
                 System.out.print(String.format("%.2f ", p[i][j]));
             }
