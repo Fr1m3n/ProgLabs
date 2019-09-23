@@ -27,7 +27,7 @@ public class Main {
                 // sin(e^((x*(x-3))^2))
                 if(y[i] == 9){
                     p[i][j] = Math.sin(Math.pow(Math.E, Math.pow(localX * (localX - 3.0d), 2.0d)));
-                } else if((y[i] == 4) || y[i] >= 7 && y[i] <= 12){
+                } else if(y[i] == 4 || y[i] >= 7 && y[i] <= 12){
                     p[i][j] = Math.tan(Math.pow(Math.E, Math.tan(localX)));
                 } else {
                     p[i][j] = Math.atan(1.0d / Math.pow(Math.E, Math.pow(3.0d / (Math.pow(Math.cos(Math.exp(Math.pow((localX + 2.0d), 2.0d))) ,2.0d) + 1) ,Math.cbrt(Math.pow(0.5d / (2.0d + localX), 2.0d) * (Math.pow(Math.E, localX) + 1.0d)))));
